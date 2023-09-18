@@ -1,0 +1,14 @@
+{
+  "accounts": [
+    {
+      "name": "Nama Pengguna 1",
+      "email": "email1@example.com",
+      "password": "hash_password1"
+    },
+    {
+      "name": "Nama Pengguna 2",
+      "email": "email2@example.com",
+      "password": "hash_password2"
+    }
+  ]
+}

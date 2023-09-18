@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>otp</title>
+    <link rel="stylesheet" href="css/otp.css" />
+  </head>
+  <body>
+    <div class="otp">
+      <h2>Verify Your Account</h2>
+      <p>
+        We emailed you the six digit code to personal@gmail.com,<br />
+        Enter the code below to confirm your email address
+      </p>
+
+      <div class="code-container">
+        <input type="number" class="code" placeholder="1" min="0" max"9" required>
+        <input type="number" class="code" placeholder="1" min="0" max"9" required>
+        <input type="number" class="code" placeholder="1" min="0" max"9" required>
+        <input type="number" class="code" placeholder="0" min="0" max"9" required>
+        <input type="number" class="code" placeholder="2" min="0" max"9" required>
+        <input type="number" class="code" placeholder="2" min="0" max"9" required>
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-primary" onclick="verifyOTP()">Verify</button>
+      </div>
+
+      <small> If you didn't receive a code !! <strong>RESEND</strong> </small>
+    </div>
+
+    <div class="sukses" id="success-popup">
+        <img src="images/suksess.png" alt="sukses">
+        <h2>Success</h2>
+        <p>Sukses Register!</p>
+        <button type="button" id="success-ok-button">OK</button>
+    </div>
+ 
+    <div class="invalid" id="error-popup">
+        <img src="images/invalid.png" alt="invalid">
+        <h2>Invalid</h2>
+        <p>Code Invalid!</p>
+        <button type="button" id="error-ok-button">OK</button>
+    </div>
+
+    <script src="lib/otp.js"></script>
+  </body>
+</html>

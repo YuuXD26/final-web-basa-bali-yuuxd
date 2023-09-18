@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>register</title>
+
+   <!-- facivon -->
+   <link rel="icon" type="image/x-icon" href="images/Angkul_Logo.png">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- boxicons -->
+   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+   <header class="header">
+   
+      <section class="flex">
+   
+         <a href="index.html" class="logo">Register</a>
+
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+         </div>
+   
+      </section>
+   
+   </header>   
+   
+   <div class="side-bar">
+   
+      <div id="close-btn">
+         <i class="fas fa-times"></i>
+      </div>
+   
+      
+   
+      <nav class="navbar">
+        <a href="index.html" class="logo"><img src="./images/logo.png" alt="Angkul" /></a>
+        <a href="index.html"><i class="fas fa-home"></i><span>beranda</span></a>
+        <a href="about.html"><i class="fas fa-question"></i><span>tentang kami</span></a>
+        <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>artikel</span></a>
+        <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>guru</span></a>
+        <a href="contact.html"><i class="fas fa-headset"></i><span>kontak kami</span></a>
+        <a href="team.html"><i class="fa-solid fa-user-group"></i><span>tim kami</span></a>
+      </nav>
+   
+   </div>
+
+
+<section class="form-container">
+
+   <form action="" method="post" enctype="multipart/form-data">
+      <h3>register sekarang</h3>
+      <p>nama <span>*</span></p>
+      <input type="text" id="name" name="name" placeholder="masukkan nama" required maxlength="50" class="box">
+      <p>email <span>*</span></p>
+      <input type="email" id="email" name="email" placeholder="masukkan email" required maxlength="50" class="box">
+      <p>password <span>*</span></p>
+      <input type="password" id="password1" name="pass" placeholder="masukkan kata sandi" required maxlength="20" class="box">
+      <span class="eye1">
+         <i class="fa fa-eye" id="eye1" onclick="toggleregister()"></i>
+      </span>
+      <p>konfirmasi password <span>*</span></p>
+      <input type="password" id="password2" name="c_pass" placeholder="konfirmasi kata sandi" required maxlength="20" class="box">
+      <span class="eye2">
+         <i class="fa fa-eye" id="eye2" onclick="togglebottom()"></i>
+      </span>
+      <p>pilih profil</p>
+      <input type="file" accept="image/*" required class="box">
+      <div class="akun-register">
+         <p class="blm-pny-akun">Sudah punya akun?</p><a href="login.html" class="create-acc">Login</a>
+      </div>
+      <button type="button" onclick="saveRegistrationData()" class="btn btn-primary" id="save_btn">Login</button>
+   </form>
+
+</section>
+
+<div class="sukses" id="success-popup">
+   <img src="images/suksess.png" alt="sukses">
+   <h2>Success</h2>
+   <p>Sukses Register</p>
+   <button type="button" id="success-ok-button">OK</button>
+</div>
+
+<div class="invalid" id="error-popup">
+   <img src="images/invalid.png" alt="invalid">
+   <h2>Invalid</h2>
+   <p>Password Invalid!</p>
+   <button type="button" id="error-ok-button" onclick="emailsama()">OK</button>
+</div>
+
+
+
+<div class="popupshare">
+   <header>
+     <span>Bagikan Website</span>
+     <div class="close"><i class="uil uil-times"></i></div>
+   </header>
+   <div class="content">
+     <p>Bagikan tautan ini melalui</p>
+     <ul class="icons">
+       <a href="#"><i class="fab fa-facebook-f"></i></a>
+       <a href="#"><i class="fab fa-twitter"></i></a>
+       <a href="#"><i class="fab fa-instagram"></i></a>
+       <a href="#"><i class="fab fa-whatsapp"></i></a>
+       <a href="#"><i class="fab fa-telegram-plane"></i></a>
+     </ul>
+     <p>Atau salin tautan</p>
+     <div class="field">
+       <i class="url-icon uil uil-link"></i>
+       <input
+         type="text"
+         readonly
+         value="https://yuuxd26.github.io/angkul/"
+       />
+       <button>Copy</button>
+     </div>
+   </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="lib/register.js"></script>
+
+   
+</body>
+</html>

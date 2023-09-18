@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>update</title>
+   <!-- facivon -->
+   <link rel="icon" type="image/x-icon" href="/images/Angkul_Logo.png">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- boxicons -->
+   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="index.html" class="logo">Update</a>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/bayu.png" class="image" alt="">
+         <h3 class="name">Bayu Ardana</h3>
+         <p class="role">Siswa</p>
+         <a href="profile.html" class="btn">lihat profil</a>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   
+
+   <nav class="navbar">
+        <a href="index.html" class="logo"><img src="./images/logo.png" alt="Angkul" /></a>
+        <a href="index.html"><i class="fas fa-home"></i><span>beranda</span></a>
+        <a href="about.html"><i class="fas fa-question"></i><span>tentang kami</span></a>
+        <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>artikel</span></a>
+        <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>guru</span></a>
+        <a href="contact.html"><i class="fas fa-headset"></i><span>kontak kami</span></a>
+        <a href="team.html"><i class="fa-solid fa-user-group"></i><span>tim kami</span></a>
+      </nav>
+      <div class="other">
+        <div class="share">
+          <button class="view-modal">
+            <i class="bx bxs-share"></i><span>Bagikan</span>
+          </button>
+        </div>
+        <div class="logout">
+          <a href="./login.html"><i class="bx bx-exit"></i><span>Keluar</span></a>
+        </div>
+      </div>
+
+</div>
+
+<section class="form-container">
+
+   <form action="" method="post" enctype="multipart/form-data">
+      <h3>update profil</h3>
+      <p>update nama</p>
+      <input type="text" name="name" placeholder="Bayu Ardana" maxlength="50" class="box">
+      <p>update email</p>
+      <input type="email" name="email" placeholder="yuuxdrestapi@gmail.com" maxlength="50" class="box">
+      <p>password lama</p>
+      <input type="password" name="old_pass" placeholder="masukkan password lama" maxlength="20" class="box">
+      <p>password baru</p>
+      <input type="password" name="new_pass" placeholder="masukkan password baru" maxlength="20" class="box">
+      <p>konfirmasi password baru</p>
+      <input type="password" name="c_pass" placeholder="konfirmasi password baru" maxlength="20" class="box">
+      <p>update foto</p>
+      <input type="file" accept="image/*" class="box">
+      <input type="submit" value="update profile" name="submit" class="btn">
+   </form>
+
+</section>
+
+
+
+<div class="popupshare">
+   <header>
+     <span>Bagikan Website</span>
+     <div class="close"><i class="uil uil-times"></i></div>
+   </header>
+   <div class="content">
+     <p>Bagikan tautan ini melalui</p>
+     <ul class="icons">
+       <a href="#"><i class="fab fa-facebook-f"></i></a>
+       <a href="#"><i class="fab fa-twitter"></i></a>
+       <a href="#"><i class="fab fa-instagram"></i></a>
+       <a href="#"><i class="fab fa-whatsapp"></i></a>
+       <a href="#"><i class="fab fa-telegram-plane"></i></a>
+     </ul>
+     <p>Atau salin tautan</p>
+     <div class="field">
+       <i class="url-icon uil uil-link"></i>
+       <input
+         type="text"
+         readonly
+         value="https://yuuxd26.github.io/angkul/"
+       />
+       <button>Copy</button>
+     </div>
+   </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script src="lib/share.js"></script>
+
+   
+</body>
+</html>
